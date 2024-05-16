@@ -38,11 +38,17 @@ class _MyHomePageState extends State<MyHomePage> {
             Text("ค่า $_counter"),
             ElevatedButton(
               onPressed: _incrementCounter,
-              child: const Icon(Icons.add),
+              child: const Icon(Icons.add, color: Colors.white),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.yellow),
+              ),
             ),
             ElevatedButton(
               onPressed: _decrementCounter,
-              child: const Icon(Icons.remove),
+              child: const Icon(Icons.remove, color: Colors.white),
+              style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red),
+              ),
             ),
           ],
         ),
